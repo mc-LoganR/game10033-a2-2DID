@@ -30,8 +30,45 @@ namespace MohawkGame2D
             // Keeps background off-white
             Window.ClearBackground(255);
 
+            // Environment
+            // Blue sky
+            Draw.SetFillColor(173, 216, 230);
+            Draw.Rectangle(0, 0, 400, 200);
+
+            // Green ground
+            Draw.SetFillColor(0, 200, 0);
+            Draw.Rectangle(0, 200, 400, 400);
+
+            // Separating line
+            Draw.SetLineSize(2);
+            Draw.LineSharp(0, Window.Height / 2, Window.Width, Window.Height / 2);
+
+            // Sun
+            Draw.SetFillColor(255, 223, 34);
+            Draw.Circle(280, 60, 30);
+
+            // Background house
+            Draw.SetFillColor(124, 10, 2);
+            Draw.Square(300, 180, 25);
+
+            // Cloud
+            Draw.SetFillColor(255);
+            Draw.SetLineColor(255);
+
+            Draw.Circle(50, 65, 40);
+            Draw.Circle(95, 40, 30);
+            Draw.Ellipse(100, 70, 80, 42);
+
+            // Animals
+            // Sheep
+            Draw.SetLineColor(0);
+
+            // Bull
+
+            //Animal Skeletons
+
+
             // Four silver rectangles drawn relative to mouse location
-            // Silver border lavender rectangle
             // Above
             Draw.SetFillColor(192, 192, 192);
             Draw.Rectangle(Input.GetMouseX() - 60, Input.GetMouseY() - 50, 125, 10);
@@ -48,10 +85,9 @@ namespace MohawkGame2D
             Draw.SetFillColor(192, 192, 192);
             Draw.Rectangle(Input.GetMouseX() + 65, Input.GetMouseY() - 50, 30, 95);
 
-            // Silver rectangle further right to give depth
+            // Silver rectangle further right for depth
             Draw.SetFillColor(192, 192, 192);
             Draw.Rectangle(Input.GetMouseX() + 95, Input.GetMouseY() - 50, 5, 95);
-
 
             // Draw two circles atop right silver rectangle
             // Both colors change with spacebar click
