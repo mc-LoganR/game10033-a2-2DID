@@ -33,23 +33,18 @@ namespace MohawkGame2D
             // Environment
             // Blue sky
             Draw.SetFillColor(173, 216, 230);
-            Draw.Rectangle(0, 0, 400, 200);
+            Draw.Rectangle(0, 0, 400, 140);
 
             // Green ground
             Draw.SetFillColor(0, 200, 0);
-            Draw.Rectangle(0, 200, 400, 400);
+            Draw.Rectangle(0, 137, 400, 400);
 
-            // Separating line
+            // Set line weight
             Draw.SetLineSize(2);
-            Draw.LineSharp(0, Window.Height / 2, Window.Width, Window.Height / 2);
-
-            // Sun
-            Draw.SetFillColor(255, 223, 34);
-            Draw.Circle(280, 60, 30);
 
             // Background house
-            Draw.SetFillColor(124, 10, 2);
-            Draw.Square(300, 180, 25);
+            Draw.SetFillColor(170, 10, 10);
+            Draw.Square(300, 120, 25);
 
             // Cloud
             Draw.SetFillColor(255);
@@ -63,7 +58,9 @@ namespace MohawkGame2D
             // Sheep
             Draw.SetLineColor(0);
 
+
             // Bull
+
 
             //Animal Skeletons
 
@@ -114,7 +111,7 @@ namespace MohawkGame2D
                 Draw.Circle(Input.GetMouseX() + 80, Input.GetMouseY() - 30, 10);
 
                 // Bottom
-                Draw.SetFillColor(100, 0, 0);
+                Draw.SetFillColor(200, 0, 0);
                 Draw.SetLineColor(0);
                 Draw.Circle(Input.GetMouseX() + 80, Input.GetMouseY() - 5, 10);
 
